@@ -68,30 +68,24 @@ nav .profile-link a {
     border-bottom: 1px solid black;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
-    font-size: rem;
+    font-size: 1.5rem;
 }
-main {
+.home-main {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
     height: 100%;
-    background-image: url('../assets/img/Cover.png');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
 }
-main .main-title-container {
-    text-align: center;
-    margin-top: 200px;
-    font-family: 'Inter', sans-serif;
+.home-main section {
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    height: 350px;
+    margin-top: 80px;
 }
-main .main-title-container h1 {
-    color: white;
+.home-main-text {
     font-size: 3rem;
-    margin-bottom: 50px;
-}
-main .main-title-container button {
-    padding: 10px;
-    border: none;
-    background-color: #47cfac;
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
+    font-weight: 700;
+    letter-spacing: 10px;
+    color: black;
+    text-align: center;
 }
