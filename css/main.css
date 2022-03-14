@@ -1,3 +1,6 @@
+html {
+    font-size: 67.5%;
+}
 body {
     margin: 0;
     padding: 0;
@@ -37,4 +40,58 @@ header .header-icons-container .icons {
     justify-content: space-between;
     justify-self: end;
     margin-right: 50px;
+}
+
+header .icons span {
+    color: white;
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+nav .nav-logo-container {
+    margin-left: 50px;
+}
+nav .nav-logo-container img {
+    width: 220px;
+    margin-top: 10px;
+}
+nav .profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+nav .profile-link a {
+    color: black;
+    border-bottom: 1px solid black;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: rem;
+}
+main {
+    height: 100%;
+    background-image: url('../assets/img/Cover.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+main .main-title-container {
+    text-align: center;
+    margin-top: 200px;
+    font-family: 'Inter', sans-serif;
+}
+main .main-title-container h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+main .main-title-container button {
+    padding: 10px;
+    border: none;
+    background-color: #47cfac;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
 }
