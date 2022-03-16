@@ -14,21 +14,18 @@ font-family: 'Roboto Slab', serif;
 html {
     font-size: 67.5%;
 }
-body.body-cover {
+body {
     font-family: 'Roboto Mono', monospace;
     margin: 0;
     padding: 0;
+}
+
+.body-cover {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-}
-
-body.body-content {
-    font-family: 'Roboto Mono', monospace;
-    margin: 0;
-    padding: 0;
 }
 
 a {
@@ -126,51 +123,68 @@ nav .profile-link a {
     font-size: 1.8rem;
 }
 
-.blogs-featured-news-section {
+.blogs-main {
+    display: grid;
+}
+
+.blogs-news-container {
     background-color: #e6e9ed;
-    width: 100%;
-    padding: 25px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    padding: 0 50px 40px;
 }
 
-.blogs-featured-news-card {
-    width: 100%;
+.blogs-main-new {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
 }
 
-.blogs-featured-news-title {
+.blogs-main-new h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.blogs-news-img-container {
     grid-column: 1;
-    margin-bottom: 10px;
 }
-
-h2.blogs-featured-news-title {
-    font-size: 1.8rem;
+.blogs-news-img-container img {
+    width: 85%;
 }
-
-.blogs-featured-news-card img {
-    grid-column: 1;
-    width: 500px;
-}
-
-.blogs-featured-news-content {
+.blogs-news-info-container {
     grid-column: 2;
-    margin-left: 70px;
-    width: 350px;
-    display: grid;
-    align-content: flex-start;
 }
 
-.blogs-featured-news-content h3 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.blogs-news-info-container h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 15px 0;
 }
-.blogs-featured-news-content p {
-    font-size: 1.3rem;
+
+.blogs-news-info-container p {
+    font-size: 1.2rem;
     font-weight: 500;
+    margin-bottom: 35px;
+}
+
+.blogs-posts-container {
+    padding: 0 50px 40px;
+}
+
+.blogs-posts-container h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-bottom: 1px solid #cdd2da;
+    padding: 15px 0;
+    text-align: center;
+}
+.blogs-button {
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid #47cfac;
+    padding: 10px 15px;
+}
+.blogs-button:hover {
+    background-color: #47cfac;
+    color: white;
+    
 }
