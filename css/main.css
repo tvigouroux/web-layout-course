@@ -166,6 +166,17 @@ nav .profile-link a {
     margin-bottom: 35px;
 }
 
+.blogs-button {
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid #47cfac;
+    padding: 10px 15px;
+}
+.blogs-button:hover {
+    background-color: #47cfac;
+    color: white;   
+}
+
 .blogs-posts-container {
     padding: 0 50px 40px;
 }
@@ -176,15 +187,31 @@ nav .profile-link a {
     border-bottom: 1px solid #cdd2da;
     padding: 15px 0;
     text-align: center;
+    margin-bottom: 20px;
 }
-.blogs-button {
-    font-size: 1rem;
+
+.blogs-posts-container .post-container {
+    display: inline-block;
+    padding-left: 10px;
+    max-width: 30%;
+    margin-bottom: 50px;
+}
+.blogs-posts-container .post-container p {
+    margin-bottom: 25px;
+    font-size: 1.5rem;
     font-weight: 500;
-    border: 1px solid #47cfac;
-    padding: 10px 15px;
 }
-.blogs-button:hover {
-    background-color: #47cfac;
+.blogs-posts-container .post-container img {
+    width: 100%;
+}
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #22272d;
+    border-top: #47cfac solid 35px;
     color: white;
-    
+}
+footer p {
+    text-align: center;
+    margin-top: 20px;
 }
