@@ -137,13 +137,13 @@ nav .profile-link a {
     padding: 0 50px 40px;
 }
 
-.blogs-main-new {
+.blogs-main-news {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr;
 }
 
-.blogs-main-new h3 {
+.blogs-main-news h3 {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 15px 0;
